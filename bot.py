@@ -5,11 +5,6 @@ from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 import httpx
 
-import logging  # ← добавьте в начало файла, если ещё не импортировано
-
-# Настройка логирования (опционально, но полезно)
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 # === Настройки ===
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
@@ -67,5 +62,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
