@@ -1,1 +1,2 @@
 python-telegram-bot
+yandex-speechkit==1.5.0
