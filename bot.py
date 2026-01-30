@@ -39,7 +39,7 @@ async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     }
                 )
                 result = response.json()
-                text = result.get("result", "")
+                text = result.get("result", "").strip()
                 
                 if not text:
                     await update.message.reply_text("Не удалось распознать речь.")
@@ -61,3 +61,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
